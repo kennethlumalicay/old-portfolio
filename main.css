@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+}
+
+:root {
+	font-size: 14px;
+}
+@media screen and (min-width: 568px) {
+	:root {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	:root {
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	:root {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1600px) {
+	:root {
+		font-size: 24px;
+	}
+}
+@media screen and (min-width: 1900px) {
+	:root {
+		font-size: 26px;
+	}
+}
+@media screen and (min-width: 2560px) {
+	:root {
+		font-size: 32px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	color: #253031;
+}
+h2 {
+	font-size: 1.1rem;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: blue;
+}
+a:visited {
+	color: blue;
+}
+
+.wrapper {
+	max-width: 1440px;
+}
+
+/* nav start */
+.nav {
+	font-family: 'Lato', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+#menu-btn {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+#menu-btn > div {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: black;
+  margin: 0.5rem 0;
+}
+.menu {
+	display: none;
+	position: relative;
+	top: -100vh;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+.show-menu {
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	opacity: 1;
+}
+/* nav end */
+
+/* splash start */
+.splash {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Lato', sans-serif;
+	background-color: #253031;
+	background: linear-gradient(180deg, #253031 50%, #87BCDE 50%);
+	color: #87BCDE;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+.splash > div {
+	display: flex;
+	align-items: center;
+}
+.splash > div:nth-child(1) {
+	font-size: 3rem;
+	margin: 0.5rem auto;
+	position: relative;
+	left: -8rem;
+}
+.splash > div:nth-child(2) {
+	font-size: 3rem;
+	margin: 0.5rem auto;
+}
+.splash > div:nth-child(3) {
+	font-size: 1.5rem;
+	margin: 1rem auto;
+	color: #253031;
+}
+.splash > * > span {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+}
+.swm > div:nth-child(1) {
+	font-size: 0.8rem;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.6;
+}
+.swm > div:nth-child(2) {
+	font-size: 3rem;
+	margin: 0px 0.3rem;
+	padding: 0px;
+	line-height: 2.2rem;
+}
+.swm > div:nth-child(3) {
+	font-size: 0.5rem;
+	margin: 2px;
+	padding: 0px;
+	opacity: 0.3;
+	text-decoration: line-through;
+}
+
+@media screen and (min-width: 768px) {
+	.splash > div:nth-child(1) {
+		font-size: 6rem;
+		margin: 0.2rem auto;
+		left: -16rem;
+	}
+	.splash > div:nth-child(2) {
+		font-size: 6rem;
+		margin: 0.2rem auto 1.8rem auto;
+	}
+	.splash > div:nth-child(3) {
+		font-size: 3rem;
+		margin: 1rem auto;
+	}
+	.swm > div:nth-child(1) {
+		font-size: 1rem;
+	}
+	.swm > div:nth-child(2) {
+		font-size: 6rem;
+		margin: 0px 0.6rem;
+		line-height: 4.4rem;
+	}
+	.swm > div:nth-child(3) {
+		font-size: 0.8rem;
+	}
+}
+/* splash end */
+
+/* projects start */
+.projects {
+	background-color: #87BCDE;
+	background: linear-gradient(180deg, #87BCDE 5%, #253031 5%, #253031 95%, white 95%);
+	margin-top: -1px;
+}
+.projects h1 {
+	padding: 1rem;
+}
+.project-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px 0.5rem;
+}
+.project-list > div {
+	width: 90vw;
+	height: 50.63vw;
+	margin: 0.5rem;
+	border-radius: 15px;
+	background-size: cover;
+	background-position: top;
+	overflow: hidden;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+.project-list > div > div {
+	display: flex;
+	height: 0;
+	padding: 0 5%;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 1;
+	background-color: rgba(27,59,111,0.9);
+	transition: all 0.75s ease-in-out;
+}
+.project-list > div:hover div {
+	height: 85%;
+	padding: 5%;
+	opacity: 1;
+}
+.project-list > div h2 {
+	color: #F7F7FF;
+}
+.project-list > div p {
+	color: #87BCDE;
+}
+.project-list > div > div > a {
+	color: #253031;
+	margin: 0 auto 0 0;
+	padding: 0 0.5rem;
+	border: 1px solid black;
+	background-color: #87BCDE;
+	text-decoration: none;
+}
+.project-list > div a:hover {
+	color: #253031;
+}
+/*.project-list > div:nth-child(even) {
+	flex-direction: row-reverse;
+	text-align: right;
+}*/
+@media screen and (min-width: 569px) {
+	.projects {
+		background: linear-gradient(180deg, #87BCDE 15%, #253031 15%, #253031 95%, white 95%);
+	}
+	.project-list > div {
+		width: 45vw;
+		height: 25.31vw;
+		margin: 0.5rem;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.project-list > div {
+		width: 30vw;
+		height: 18vw;
+		margin: 0.5rem;
+	}
+}
+/* projects end */
+
+/* about start */
+.about {
+	/*background-image: url("./img/about-bg.png");
+	background-size: cover;
+	background-position: center;
+	color: white;*/
+	padding: 0 0.5rem;
+}
+.about > div {
+	padding: 0.5rem;
+	text-indent: 1rem;
+}
+.about > div > *:not(:last-child) {
+	margin: 0px auto 1rem auto;
+}
+.about > div > h2 {
+	text-align: center;
+}
+/* about end */
+
+/* skills start */
+.skills {
+	padding: 0 0.5rem;
+}
+.skillset {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+.skillset > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.skillset > ul > li {
+	min-width: 8rem;
+}
+.legend {
+	font-size: 0.8rem;
+	margin-right: 2rem;
+	text-align: right;
+}
+.note {
+	font-size: 0.8rem;
+	text-align: center;
+}
+/* skills end */
+
+/* join start */
+.join {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0;
+}
+@media screen and (min-width: 1024px) {
+	.join {
+		flex-direction: row;
+	}
+	.skills {
+		border-left: 2px solid black;
+	}
+}
+/* join end */
+
+/* contacts start */
+.contacts {
+	padding: 2rem 0.5rem 0.5rem 0.5rem;
+	text-align: center;
+	background-color: #253031;
+	color: #87BCDE;
+}
+.contacts > p {
+	margin: 0 1rem 1rem 1rem;
+}
+.contacts > div {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 0.5rem;
+}
+.contacts > div > * {
+	min-width: 7rem;
+}
+.contacts a {
+	padding: 0.5rem;
+	margin: 0.5rem 0.5rem 0 0.5rem;
+	border: 1px solid #87BCDE;
+	border-radius: 5px;
+	color: #87BCDE;
+	text-decoration: none;
+}
+.contacts a:visited {
+	color: #87BCDE;
+}
+/* contacts end */
