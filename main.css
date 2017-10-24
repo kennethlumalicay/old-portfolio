@@ -128,12 +128,12 @@ a:visited {
 	left: -8rem;
 }
 .splash > div:nth-child(2) {
-	font-size: 3rem;
+	font-size: 4rem;
 	margin: 0.5rem auto;
 }
 .splash > div:nth-child(3) {
 	font-size: 1.5rem;
-	margin: 1rem auto;
+	margin: 1.5rem auto;
 	color: #253031;
 }
 .splash > * > span {
@@ -169,12 +169,12 @@ a:visited {
 		left: -16rem;
 	}
 	.splash > div:nth-child(2) {
-		font-size: 6rem;
+		font-size: 7rem;
 		margin: 0.2rem auto 1.8rem auto;
 	}
 	.splash > div:nth-child(3) {
 		font-size: 3rem;
-		margin: 1rem auto;
+		margin: 1.8rem auto;
 	}
 	.swm > div:nth-child(1) {
 		font-size: 1rem;
