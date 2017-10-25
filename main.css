@@ -225,7 +225,7 @@ a:visited {
 	flex-direction: column;
 	justify-content: center;
 	opacity: 0;
-	background-color: rgba(135,188,222,0.9);
+	background-color: rgba(135,188,222,0.95);
 	transition: all 0.5s ease-in-out;
 }
 .project-list > div:hover div {
