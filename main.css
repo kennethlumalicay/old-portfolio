@@ -334,8 +334,8 @@ a:visited {
 	list-style: none;
 }
 .skillset > ul > li {
-	min-width: 8rem;
-	padding: 0 1rem;
+	min-width: 7rem;
+	padding: 0 0.6rem;
 	transition: all 0.5s;
 }
 .skillset > ul > li:hover {
