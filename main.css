@@ -211,7 +211,7 @@ a:visited {
 	width: 90vw;
 	height: 50.63vw;
 	margin: 0.5rem;
-	border-radius: 15px;
+	border-radius: 10px;
 	background-size: cover;
 	background-position: top;
 	overflow: hidden;
@@ -257,7 +257,7 @@ a:visited {
 }*/
 @media screen and (min-width: 569px) {
 	.projects {
-		background: linear-gradient(180deg, #87BCDE 15%, #253031 15%, #253031 95%, white 95%);
+		background: linear-gradient(180deg, #87BCDE 15%, #253031 15%, #253031 95%, #F7F7FF 95%);
 	}
 	.project-list > div {
 		width: 45vw;
@@ -300,8 +300,12 @@ a:visited {
 }
 .skillset {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	padding: 1rem;
+	padding: 0 1rem;
+}
+.skillset > h2 {
+	margin-top: 0.5rem;
 }
 .skillset > ul {
 	display: flex;
@@ -313,6 +317,11 @@ a:visited {
 }
 .skillset > ul > li {
 	min-width: 8rem;
+	padding-left: 1rem;
+	transition: all 0.5s;
+}
+.skillset > ul > li:hover {
+	background-color: #87BCDE;
 }
 .legend {
 	font-size: 0.8rem;
@@ -329,14 +338,23 @@ a:visited {
 .join {
 	display: flex;
 	flex-direction: column;
-	padding: 2rem 0;
+	padding: 2rem 1.6rem;
+	background-color: #F7F7FF;
+	color: #596880;
+	line-height: 2rem;
+}
+.join h2 {
+	color: #133d73;
+}
+.join h1 {
+	color: #001064;
 }
 @media screen and (min-width: 1024px) {
 	.join {
 		flex-direction: row;
 	}
 	.skills {
-		border-left: 2px solid black;
+		border-left: 1px solid #133d73;
 	}
 }
 /* join end */
