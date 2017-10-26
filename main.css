@@ -382,6 +382,10 @@ a:visited {
 	}
 	.skills {
 		border-left: 1px solid #133d73;
+		padding: 0 2rem;
+	}
+	.about {
+		padding: 0 1.5rem;
 	}
 }
 /* join end */
