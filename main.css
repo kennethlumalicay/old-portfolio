@@ -212,15 +212,15 @@ a:visited {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	padding: 0px 0.5rem;
+	padding: 0;
 }
 .project-list > div {
 	width: 90vw;
 	height: 50.63vw;
 	margin: 0.5rem;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-size: cover;
 	background-position: top;
 	overflow: hidden;
@@ -269,16 +269,16 @@ a:visited {
 		background: linear-gradient(180deg, #87BCDE 15%, #253031 0%, #253031 95%, #F7F7FF 0%);
 	}
 	.project-list > div {
-		width: 45vw;
-		height: 25.31vw;
-		margin: 0.5rem;
+		width: 46vw;
+		height: 25.88vw;
+		margin: 6px;
 	}
 }
 @media screen and (min-width: 1024px) {
 	.project-list > div {
-		width: 30vw;
-		height: 18vw;
-		margin: 0.5rem;
+		width: 31vw;
+		height: 17.44vw;
+		margin: 6px;
 	}
 }
 /* projects end */
