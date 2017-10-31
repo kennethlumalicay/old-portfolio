@@ -1,14 +1,12 @@
 @font-face {
 	font-family: 'Roboto Slab';
-	src: url(./fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
+	src: url(../fonts/Roboto_Slab/RobotoSlab-Regular.ttf);
 }
 @font-face {
 	font-family: 'Lato';
-	src: url(./fonts/Lato/Lato-Regular.ttf);
+	src: url(../fonts/Lato/Lato-Regular.ttf);
 }
-body, html {
-	padding: 0;
-	margin: 0;
+body {
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -48,6 +46,7 @@ body, html {
 }
 /* end of font size */
 
+/* start of generic elements */
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
@@ -72,6 +71,8 @@ a {
 a:visited {
 	color: #1B3B6F;
 }
+
+/* end of generic elements */
 
 .wrapper {
 	max-width: 1440px;
