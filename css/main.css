@@ -132,7 +132,11 @@ a:visited {
 
 .logo {
 	display: block;
+	background-image: url("./../img/K-400.png");
+	background-size: cover;
+	background-position: center;
 	width: 4rem;
+	height: 4rem;
 	position: absolute;
 	top: 2rem;
 	left: 0;
