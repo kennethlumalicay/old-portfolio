@@ -130,6 +130,20 @@ a:visited {
 }
 /* nav end */
 
+.logo {
+	width: 4rem;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+@media screen and (orientation: landscape) {
+	.logo {
+		display: none;
+	}
+}
+
 /* splash start */
 .splash {
 	display: -webkit-box;
