@@ -131,6 +131,7 @@ a:visited {
 /* nav end */
 
 .logo {
+	display: block;
 	width: 4rem;
 	position: absolute;
 	top: 2rem;
