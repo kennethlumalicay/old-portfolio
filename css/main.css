@@ -244,8 +244,8 @@ a:visited {
 	}
 }
 @media screen and (orientation: portrait) {
-	.splash {
-		background: linear-gradient(180deg, #253031 50%, rgba(0,0,0,0) 0%);
+	.splash:before {
+		background: linear-gradient(180deg, #08737d, #87BCDE 20%, #87BCDE 60%, #253031);
 	}
 }
 /* splash end */
