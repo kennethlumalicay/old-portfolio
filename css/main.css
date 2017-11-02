@@ -272,7 +272,8 @@ a:visited {
 /* projects start */
 .projects {
 	background-color: #87BCDE;
-		background: linear-gradient(180deg, #253031 80%, rgba(0,0,0,0));
+	background: linear-gradient(180deg, #253031 80%, rgba(0,0,0,0));
+	margin-top: -1px;
 }
 .projects h1 {
 	padding: 1rem;
