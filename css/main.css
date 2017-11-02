@@ -166,6 +166,20 @@ a:visited {
 	background: -o-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 80%, #253031);
 	background: linear-gradient(180deg, #08737d, #87BCDE 20%, #87BCDE 80%, #253031);
 }
+.splash:after {
+	content: "Available for hire";
+	position: absolute;
+	top: 10vh;
+	right: 0rem;
+	background-color: #8c1010;
+	color: #253031;
+	font-size: 1.5rem;
+	-webkit-transform: rotate(25deg);
+	    -ms-transform: rotate(25deg);
+	        transform: rotate(25deg);
+	width: 15rem;
+	text-align: center;
+}
 .splash {
 	margin: 1.5vh 0.5rem;
 	display: -webkit-box;
@@ -274,10 +288,10 @@ a:visited {
 }
 @media screen and (orientation: portrait) {
 	.splash:before {
-		background: -webkit-gradient(linear, left top, left bottom, from(#08737d), color-stop(20%, #87BCDE), color-stop(50%, #87BCDE), to(#253031));
-		background: -webkit-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 50%, #253031);
-		background: -o-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 50%, #253031);
-		background: linear-gradient(180deg, #08737d, #87BCDE 20%, #87BCDE 50%, #253031);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #253031), color-stop(0%, rgba(0,0,0,0)));
+		background: -webkit-linear-gradient(top, #253031 50%, rgba(0,0,0,0) 0%);
+		background: -o-linear-gradient(top, #253031 50%, rgba(0,0,0,0) 0%);
+		background: linear-gradient(180deg, #253031 50%, rgba(0,0,0,0) 0%);
 	}
 }
 /* splash end */
