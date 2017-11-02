@@ -490,6 +490,13 @@ a:visited {
 	font-size: 0.8rem;
 	text-align: center;
 }
+.stack::first-letter {
+	font-weight: 600;
+	color: #133d73;
+}
+.stack {
+	color: #3d4a7b;
+}
 /* skills end */
 
 /* join start */
