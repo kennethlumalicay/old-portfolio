@@ -37,12 +37,12 @@ body {
 }
 @media screen and (min-width: 1900px) {
 	:root {
-		font-size: 26px;
+		font-size: 28px;
 	}
 }
 @media screen and (min-width: 2560px) {
 	:root {
-		font-size: 32px;
+		font-size: 36px;
 	}
 }
 /* end of font size */
@@ -508,6 +508,8 @@ a:visited {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 2rem 1.6rem;
 	background-color: #F7F7FF;
 	color: #596880;
@@ -519,7 +521,15 @@ a:visited {
 .join h1 {
 	color: #001064;
 }
-@media screen and (min-width: 1024px) {
+.join > * {
+	max-width: 60rem;
+}
+@media screen and (min-width: 769px) {
+	.join > * > div {
+		padding: 0 2rem;
+	}
+}
+/*@media screen and (min-width: 1024px) {
 	.join {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
@@ -533,7 +543,7 @@ a:visited {
 	.about {
 		padding: 0 1.5rem;
 	}
-}
+}*/
 /* join end */
 
 /* contacts start */
