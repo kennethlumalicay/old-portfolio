@@ -272,7 +272,7 @@ a:visited {
 /* projects start */
 .projects {
 	background-color: #87BCDE;
-		background: linear-gradient(180deg, #253031 90%, #F7F7FF);
+		background: linear-gradient(180deg, #253031 80%, #F7F7FF);
 }
 .projects h1 {
 	padding: 1rem;
@@ -344,7 +344,7 @@ a:visited {
 }*/
 @media screen and (min-width: 569px) {
 	.projects {
-		background: linear-gradient(180deg, #253031 90%, #F7F7FF);
+		background: linear-gradient(180deg, #253031 80%, #F7F7FF);
 	}
 	.project-list > div {
 		width: 46vw;
