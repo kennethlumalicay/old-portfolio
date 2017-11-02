@@ -151,7 +151,20 @@ a:visited {
 }
 
 /* splash start */
+.splash:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	background-color: #253031;
+	/*background: radial-gradient(#87BCDE 60%, #253031);*/
+	background: linear-gradient(180deg, #426B69, #87BCDE 20%, #87BCDE 80%, #253031);
+}
 .splash {
+	margin: 1.5vh 0.5rem;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -161,12 +174,9 @@ a:visited {
 	        flex-direction: column;
 	font-family: 'Lato', sans-serif;
 	background-color: #253031;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #253031), color-stop(50%, #87BCDE));
-	background: -webkit-linear-gradient(top, #253031 50%, #87BCDE 50%);
-	background: -o-linear-gradient(top, #253031 50%, #87BCDE 50%);
-	background: linear-gradient(180deg, #253031 50%, #87BCDE 50%);
+	background: linear-gradient(180deg, #253031 50%, rgba(0,0,0,0) 0%);
 	color: #87BCDE;
-	min-height: 100vh;
+	min-height: 97vh;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -261,11 +271,7 @@ a:visited {
 /* projects start */
 .projects {
 	background-color: #87BCDE;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #87BCDE), color-stop(0%, #253031), color-stop(98%, #253031), color-stop(0%, #F7F7FF));
-	background: -webkit-linear-gradient(top, #87BCDE 5%, #253031 0%, #253031 98%, #F7F7FF 0%);
-	background: -o-linear-gradient(top, #87BCDE 5%, #253031 0%, #253031 98%, #F7F7FF 0%);
-	background: linear-gradient(180deg, #87BCDE 5%, #253031 0%, #253031 98%, #F7F7FF 0%);
-	margin-top: -1px;
+		background: linear-gradient(180deg, #253031 90%, #F7F7FF);
 }
 .projects h1 {
 	padding: 1rem;
@@ -352,10 +358,7 @@ a:visited {
 }*/
 @media screen and (min-width: 569px) {
 	.projects {
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #87BCDE), color-stop(0%, #253031), color-stop(95%, #253031), color-stop(0%, #F7F7FF));
-		background: -webkit-linear-gradient(top, #87BCDE 15%, #253031 0%, #253031 95%, #F7F7FF 0%);
-		background: -o-linear-gradient(top, #87BCDE 15%, #253031 0%, #253031 95%, #F7F7FF 0%);
-		background: linear-gradient(180deg, #87BCDE 15%, #253031 0%, #253031 95%, #F7F7FF 0%);
+		background: linear-gradient(180deg, #253031 90%, #F7F7FF);
 	}
 	.project-list > div {
 		width: 46vw;
