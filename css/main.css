@@ -9,6 +9,7 @@
 body {
 	font-family: 'Roboto Slab', serif;
 	margin: 0;
+	background-color: #F7F7FF;
 }
 
 /* start of font size */
@@ -168,7 +169,7 @@ a:visited {
 	text-align: center;
 }*/
 .splash {
-	margin: 1.5vh 0.5rem;
+	margin: 1.5vh 0;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-orient: vertical;
@@ -271,7 +272,7 @@ a:visited {
 /* projects start */
 .projects {
 	background-color: #87BCDE;
-		background: linear-gradient(180deg, #253031 80%, #F7F7FF);
+		background: linear-gradient(180deg, #253031 80%, rgba(0,0,0,0));
 }
 .projects h1 {
 	padding: 1rem;
@@ -312,6 +313,7 @@ a:visited {
 	        justify-content: center;
 	opacity: 0;
 	background-color: rgba(135,188,222,0.95);
+	background: linear-gradient(180deg, rgba(135,188,222,0.9), rgba(37,48,49,0.9));
 	transition: all 0.5s ease-in-out;
 }
 .project-list > div:hover div {
@@ -323,7 +325,8 @@ a:visited {
 	color: #253031;
 }
 .project-list > div p {
-	color: #F7F7FF;
+	font-size: 0.8rem;
+	color: #E3E5FB;
 }
 .project-list > div > div > a {
 	color: #1B3B6F;
@@ -491,7 +494,6 @@ a:visited {
 	-webkit-box-align: center;
 	        align-items: center;
 	padding: 2rem 1.6rem;
-	background-color: #F7F7FF;
 	color: #596880;
 	line-height: 2rem;
 }
