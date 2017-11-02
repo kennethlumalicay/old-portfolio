@@ -161,7 +161,10 @@ a:visited {
 	z-index: -1;
 	background-color: #253031;
 	/*background: radial-gradient(#87BCDE 60%, #253031);*/
-	background: linear-gradient(180deg, #426B69, #87BCDE 20%, #87BCDE 80%, #253031);
+	background: -webkit-gradient(linear, left top, left bottom, from(#08737d), color-stop(20%, #87BCDE), color-stop(80%, #87BCDE), to(#253031));
+	background: -webkit-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 80%, #253031);
+	background: -o-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 80%, #253031);
+	background: linear-gradient(180deg, #08737d, #87BCDE 20%, #87BCDE 80%, #253031);
 }
 .splash {
 	margin: 1.5vh 0.5rem;
@@ -174,6 +177,9 @@ a:visited {
 	        flex-direction: column;
 	font-family: 'Lato', sans-serif;
 	background-color: #253031;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #253031), color-stop(0%, rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top, #253031 50%, rgba(0,0,0,0) 0%);
+	background: -o-linear-gradient(top, #253031 50%, rgba(0,0,0,0) 0%);
 	background: linear-gradient(180deg, #253031 50%, rgba(0,0,0,0) 0%);
 	color: #87BCDE;
 	min-height: 97vh;
@@ -266,11 +272,22 @@ a:visited {
 		font-size: 0.8rem;
 	}
 }
+@media screen and (orientation: portrait) {
+	.splash:before {
+		background: -webkit-gradient(linear, left top, left bottom, from(#08737d), color-stop(20%, #87BCDE), color-stop(50%, #87BCDE), to(#253031));
+		background: -webkit-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 50%, #253031);
+		background: -o-linear-gradient(top, #08737d, #87BCDE 20%, #87BCDE 50%, #253031);
+		background: linear-gradient(180deg, #08737d, #87BCDE 20%, #87BCDE 50%, #253031);
+	}
+}
 /* splash end */
 
 /* projects start */
 .projects {
 	background-color: #87BCDE;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #253031), to(#F7F7FF));
+		background: -webkit-linear-gradient(top, #253031 90%, #F7F7FF);
+		background: -o-linear-gradient(top, #253031 90%, #F7F7FF);
 		background: linear-gradient(180deg, #253031 90%, #F7F7FF);
 }
 .projects h1 {
@@ -358,6 +375,9 @@ a:visited {
 }*/
 @media screen and (min-width: 569px) {
 	.projects {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #253031), to(#F7F7FF));
+		background: -webkit-linear-gradient(top, #253031 90%, #F7F7FF);
+		background: -o-linear-gradient(top, #253031 90%, #F7F7FF);
 		background: linear-gradient(180deg, #253031 90%, #F7F7FF);
 	}
 	.project-list > div {
@@ -511,8 +531,12 @@ a:visited {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 2rem 1.6rem;
 	background-color: #F7F7FF;
 	color: #596880;
