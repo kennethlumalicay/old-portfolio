@@ -579,12 +579,17 @@ a:visited {
 	transition: all 0.35s ease-in-out;
 }
 .tools > span:hover:after {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	opacity: 1;
 }
 .tools > span:hover img {
 	-webkit-filter: grayscale(0%);
 	        filter: grayscale(0%);
+}
+@media screen and (min-width: 400px) {
+	.tools > span:hover:after {
+		margin-top: 2.5rem;
+	}
 }
 @media screen and (min-width: 768px) {
 	.tools > span img {
