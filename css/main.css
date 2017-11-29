@@ -14,7 +14,7 @@ body {
 
 /* start of font size */
 :root {
-	font-size: 14px;
+	font-size: 16px;
 }
 @media screen and (min-width: 568px) {
 	:root {
@@ -197,14 +197,14 @@ a:visited {
 	        align-items: center;
 }
 .splash > div:nth-child(1) {
-	font-size: 3rem;
+	font-size: 2.6rem;
 	margin: 0.5rem auto;
 	position: relative;
 	left: -8rem;
 }
 .splash > div:nth-child(2) {
-	font-size: 4rem;
-	margin: 0.4rem auto;
+	font-size: 3.6rem;
+	margin: 0.6rem auto 0 auto;
 }
 .splash > div:nth-child(3) {
 	font-size: 1.5rem;
@@ -617,6 +617,7 @@ a:visited {
 .single-page > img {
 	margin-top: 1rem;
 	max-height: 10rem;
+	max-width: 100%;
 }
 .single-page > h1 {
 	margin-bottom: 1rem;
@@ -649,9 +650,7 @@ a:visited {
 }
 .responsive-web h1 {
 	color: #87BCDE;
-}
-.responsive-web > h1 {
-	font-size: 4rem;
+	font-size: 3.5rem;
 }
 .inner-res {
 	display: -webkit-box;
@@ -684,6 +683,7 @@ a:visited {
 .certificate img {
 	margin: 0.5rem auto;
 	max-height: 16rem;
+	max-width: 100%;
 }
 .certificate a {
 	display: inline-block;
@@ -974,13 +974,13 @@ a:visited {
 
 /* contacts start */
 .contacts {
-	padding: 2rem 0.5rem 0.1rem 0.5rem;
+	padding: 1rem 0;
 	text-align: center;
 	background-color: #253031;
 	color: #87BCDE;
 }
 .contacts > p {
-	margin: 0 1rem 1rem 1rem;
+	margin: 0.5rem auto;
 }
 .contacts > div {
 	display: -webkit-box;
@@ -1079,7 +1079,7 @@ a:visited {
 }
 footer {
 	display: block;
-	margin: 0.8rem auto;
+	margin: 0.5rem auto;
 	font-size: 0.8rem;
 	color: rgba(155,155,155,1);
 }
