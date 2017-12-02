@@ -155,20 +155,8 @@ a:visited {
 	height: 100vh;
 	z-index: -1;
 	background-color: #253031;
-	/*background: radial-gradient(#87BCDE 60%, #253031);*/
 	background: linear-gradient(180deg, #003a40, #87BCDE 20%, #87BCDE 80%, #253031);
 }
-/*.splash:after {
-	content: "Available for hire";
-	position: absolute;
-	top: 1.6vh;
-	right: 0.6rem;
-	background-color: #8c1010;
-	color: #253031;
-	font-size: 1.5rem;
-	width: 15rem;
-	text-align: center;
-}*/
 .splash {
 	margin: 1.5vh 0.4vh;
 	display: -webkit-box;
@@ -278,7 +266,6 @@ a:visited {
 /* projects start */
 .projects {
 	background-color: #253031;
-	/*background: linear-gradient(180deg, #253031 80%, rgba(0,0,0,0));*/
 	margin-top: -1px;
 	padding: 2rem 0;
 }
@@ -302,7 +289,6 @@ a:visited {
 	width: 90vw;
 	height: 50.63vw;
 	margin: 0.5rem;
-	/*border-radius: 10px;*/
 	background-size: cover;
 	background-position: top;
 	overflow: hidden;
@@ -324,15 +310,14 @@ a:visited {
 	background: linear-gradient(180deg, rgba(135,188,222,0.9), rgb(0, 86, 111));
 	transition: all 0.5s ease-in-out;
 }
-.project-list > div:hover div {
-	height: 85%;
-	padding: 5%;
+.project-list > div:hover > div {
+	height: 100%;
 	opacity: 1;
 }
 .project-list > div h2 {
 	color: #253031;
 }
-.project-list > div p {
+.project-list > div {
 	font-size: 0.8rem;
 	color: #E3E5FB;
 }
@@ -360,14 +345,18 @@ a:visited {
 	margin: auto auto auto -1rem;
 	opacity: 1;
 }
-/*.project-list > div:nth-child(even) {
-	flex-direction: row-reverse;
-	text-align: right;
-}*/
+.msg-1024 {
+	display: none;
+	padding: 0;
+}
+.msg-1024 > h3 {
+	color: #333;
+}
+.msg-1024 > ul {
+	padding-left: 1.5rem;
+	margin: 0;
+}
 @media screen and (min-width: 569px) {
-	.projects {
-		/*background: linear-gradient(180deg, #253031 80%, #F7F7FF);*/
-	}
 	.project-list > div {
 		width: 46vw;
 		height: 25.88vw;
@@ -375,10 +364,59 @@ a:visited {
 	}
 }
 @media screen and (min-width: 1024px) {
+	.project-list {
+		width: 100vw;
+		height: 30rem;
+		display: grid;
+		grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
+		grid-gap: 0.5rem;
+		-webkit-box-pack: stretch;
+		        justify-content: stretch;
+		-webkit-box-align: stretch;
+		        align-items: stretch;
+		padding: 1rem;
+	}
 	.project-list > div {
-		width: 31vw;
-		height: 17.44vw;
-		margin: 6px;
+		width: auto;
+		height: auto;
+	}
+	.project-list > div:nth-child(1) {
+	  grid-area: 1 / 1 / 3 / 3;
+	}
+	.project-list > div:nth-child(2) {
+	  grid-area: 1 / 3;
+	}
+	.project-list > div:nth-child(3) {
+	  grid-area: 2 / 3;
+	}
+	.project-list > div:nth-child(4) {
+	  grid-area: 3 / 1;
+	}
+	.project-list > div:nth-child(5) {
+	  grid-area: 3 / 2;
+	}
+	.project-list > div:nth-child(6) {
+	  grid-area: 3 / 3;
+	}
+	.msg-1024 {
+		display: block;
+	}
+	.msg-0 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.project-list {
+		height: 40rem;
+	}
+	.project-list > div h2 {
+		font-size: 1.5rem;
+	}
+	.project-list > div {
+		font-size: 1rem;
+	}
+	.msg-1024 > h3 {
+		font-size: 1.1rem;
 	}
 }
 /* projects end */
@@ -1090,8 +1128,10 @@ footer {
 /* additional stuff for landscape */
 @media screen and (orientation: landscape) {
 	.projects {
+		display: -webkit-box;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		        align-items: center;
 		min-height: 100vh;
 	}
 }
